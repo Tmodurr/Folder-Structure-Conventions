@@ -18,28 +18,27 @@ Folder Structure Conventions
 > `LICENSE`, `README.md`
 
 
-   
-   
-    .
+      
+  .
     ├── config                              # Folder includes geodatabases related to model runs/scenarios
-        ├── backup                                  # Includes backup files/geodatabase from previous tool sessions
-            ├── ex. Config_BAK.gdb                      # Backup geodatabase from previous tool sessions
-            ├── ex. Config_BAK1.gdb                     # Backup geodatabase from previous tool sessions
-        ├── current
-            ├── Config.gdb                              # Current model parameters for Criticality Tool
-        ├── previous
-            ├── <INSERT>                                # Previous model parameters for Criticality Tool
-        ├── scratch
-            ├── Index                                   # Folder used by ArcGIS Pro indexing system - not critical to project
-            ├── UCPW Criticality Tool.gdb               # Scratch geodatabase where results are written
+      ├── backup                                  # Includes backup files/geodatabase from previous tool sessions
+        ├── ex. Config_BAK.gdb                      # Backup geodatabase from previous tool sessions
+        ├── ex. Config_BAK1.gdb                     # Backup geodatabase from previous tool sessions
+      ├── current
+        ├── Config.gdb                              # Current model parameters for Criticality Tool
+      ├── previous
+        ├── <INSERT>                                # Previous model parameters for Criticality Tool
+      ├── scratch
+        ├── Index                                   # Optional Folder used by ArcGIS Pro indexing system 
+        ├── UCPW Criticality Tool.gdb               # Scratch geodatabase where results are written
     ├── data                               # Folder includes a test dataset for testing tool
-        ├── uc-test-data.gdb                        # Test geodatabase and feature class
+      ├── uc-test-data.gdb                        # Test geodatabase and feature class
     ├── documentation                      # Folder includes documentation related to the UC Criticality Tool
-        ├── ENTER NAME OF DOCUMENT HERE        # <INSERT DOC SUMMARY>
-    ├── src                                # Folder includes Python based code which runs and manages the application and app data
-        ├── ApplicationCode.py                 # Business logic for UC Tool
-        ├── front-end-lite.py                  # GUI and Data-backup logic
-        ├── PySimpleGUI.py                     # Library/engine which drives the custom interface 
+      ├── ENTER NAME OF DOCUMENT HERE        # <INSERT DOC SUMMARY>
+    ├── src                                # Folder includes code which runs and manages the application and app data
+      ├── ApplicationCode.py                 # Business logic for UC Tool
+      ├── front-end-lite.py                  # GUI and Data-backup logic
+      ├── PySimpleGUI.py                     # Library/engine which drives the custom interface 
     ├── UCPW Criticality Tool.aprx         # Default ArcGIS Project which includes connections to UC Criticality Tool          
     ├── UCPW Criticality Tool.tbx          # ArcGIS Toolbox which contains the UC Criticality Tool
 
