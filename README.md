@@ -17,22 +17,20 @@ Folder Structure Conventions
 > Use short lowercase names at least for the top-level files and folders except
 > `LICENSE`, `README.md`
 
-
-      
-    .
+.
     ├── config                              # Folder includes geodatabases related to model runs/scenarios
-      ├── backup                                  # Includes backup files/geodatabase from previous tool sessions
-        ├── ex. Config_BAK.gdb                      # Backup geodatabase from previous tool sessions
-        ├── ex. Config_BAK1.gdb                     # Backup geodatabase from previous tool sessions
-      ├── current
-        ├── Config.gdb                              # Current model parameters for Criticality Tool
-      ├── previous
-        ├── <INSERT>                                # Previous model parameters for Criticality Tool
-      ├── scratch
-        ├── Index                                   # Optional Folder used by ArcGIS Pro indexing system 
-        ├── UCPW Criticality Tool.gdb               # Scratch geodatabase where results are written
+      ├── backup                              # Includes backup files/geodatabase from previous tool sessions
+        ├── ex. Config_BAK.gdb                  # Backup geodatabase from previous tool sessions
+        ├── ex. Config_BAK1.gdb                 # Backup geodatabase from previous tool sessions
+      ├── current                             # Includes current model configuration geodatabase
+        ├── Config.gdb                          # Current model parameters for Criticality Tool
+      ├── previous                            # <DOES THIS NEED TO BE HERE?>
+        ├── <INSERT>                            # Previous model parameters for Criticality Tool
+      ├── scratch                             # Scratch geodatabase configured within Project File (UCPW Criticality Tool.aprx)
+        ├── Index                               # Optional Folder used by ArcGIS Pro indexing system 
+        ├── UCPW Criticality Tool.gdb           # Scratch geodatabase where results are written
     ├── data                               # Folder includes a test dataset for testing tool
-      ├── uc-test-data.gdb                        # Test geodatabase and feature class
+      ├── uc-test-data.gdb                   # Test geodatabase and feature class
     ├── documentation                      # Folder includes documentation related to the UC Criticality Tool
       ├── ENTER NAME OF DOCUMENT HERE        # <INSERT DOC SUMMARY>
     ├── src                                # Folder includes code which runs and manages the application and app data
