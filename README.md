@@ -17,7 +17,7 @@ Folder Structure Conventions
 > Use short lowercase names at least for the top-level files and folders except
 > `LICENSE`, `README.md`
 
-.
+    .
     ├── config                              # Folder includes geodatabases related to model runs/scenarios
       ├── backup                              # Includes backup files/geodatabase from previous tool sessions
         ├── ex. Config_BAK.gdb                  # Backup geodatabase from previous tool sessions
