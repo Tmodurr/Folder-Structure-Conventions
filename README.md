@@ -24,8 +24,6 @@ Folder Structure Conventions
         ├── ex. Config_BAK1.gdb                 # Backup geodatabase from previous tool sessions
       ├── current                             # Includes current model configuration geodatabase
         ├── Config.gdb                          # Current model parameters for Criticality Tool
-      ├── previous                            # <DOES THIS NEED TO BE HERE?>
-        ├── <INSERT>                            # Previous model parameters for Criticality Tool
       ├── scratch                             # Scratch geodatabase configured within Project File (UCPW Criticality Tool.aprx)
         ├── Index                               # Optional Folder used by ArcGIS Pro indexing system 
         ├── UCPW Criticality Tool.gdb           # Scratch geodatabase where results are written
