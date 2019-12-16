@@ -30,7 +30,7 @@ Folder Structure Conventions
     ├── data                               # Folder includes a test dataset for testing tool
       ├── uc-test-data.gdb                   # Test geodatabase and feature class
     ├── documentation                      # Folder includes documentation related to the UC Criticality Tool
-      ├── ENTER NAME OF DOCUMENT HERE        # <INSERT DOC SUMMARY>
+      ├── UnionCounty-ToolSummary            # Current User Guide for the tool.
     ├── src                                # Folder includes code which runs and manages the application and app data
       ├── ApplicationCode.py                 # Business logic for UC Tool
       ├── front-end-lite.py                  # GUI and Data-backup logic
