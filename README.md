@@ -20,21 +20,25 @@ Folder Structure Conventions
     .
     ├── config                              # Folder includes geodatabases related to model runs/scenarios
       ├── backup                              # Includes backup files/geodatabase from previous tool sessions
-        ├── ex. Config_BAK.gdb                  # Backup geodatabase from previous tool sessions
-        ├── ex. Config_BAK1.gdb                 # Backup geodatabase from previous tool sessions
+        ├── ex. Config_BAK.gdb                  # Backup geodatabase from previous tool session
+        ├── ex. Config_BAK1.gdb                 # Backup geodatabase from the second previous tool session
       ├── current                             # Includes current model configuration geodatabase
         ├── Config.gdb                          # Current model parameters for Criticality Tool
       ├── scratch                             # Scratch geodatabase configured within Project File (UCPW Criticality Tool.aprx)
         ├── Index                               # Optional Folder used by ArcGIS Pro indexing system 
         ├── UCPW Criticality Tool.gdb           # Scratch geodatabase where results are written
-    ├── data                               # Folder includes a test dataset for testing tool
-      ├── uc-test-data.gdb                   # Test geodatabase and feature class
-    ├── documentation                      # Folder includes documentation related to the UC Criticality Tool
-      ├── UnionCounty-ToolSummary            # Current User Guide for the tool.
-    ├── src                                # Folder includes code which runs and manages the application and app data
-      ├── ApplicationCode.py                 # Business logic for UC Tool
-      ├── front-end-lite.py                  # GUI and Data-backup logic
-      ├── PySimpleGUI.py                     # Library/engine which drives the custom interface 
+      ├── template                              # Scratch geodatabase configured within Project File (UCPW Criticality Tool.aprx)
+        ├── Config.gdb.zip                      # Empty template Config geodatabase to start a model from scratch. 
+    ├── data                                # Folder includes a test dataset for testing tool
+      ├── uc-test-data.gdb.zip                  # Test geodatabase and feature class
+      ├── sampleConfig                        # Folder containing example geodatabase
+        ├── Config.gdb                          # Sample Config geodatabase
+    ├── documentation                       # Folder includes documentation related to the UC Criticality Tool
+      ├── UnionCountyCriticality-ToolSummary  # Current User Guide for the tool.
+    ├── src                                 # Folder includes code which runs and manages the application and app data
+      ├── ApplicationCode.py                  # Business logic for UC Tool
+      ├── front-end-lite.py                   # GUI and data-backup logic
+      ├── PySimpleGUI.py                      # Library/engine which drives the custom interface 
     ├── UCPW Criticality Tool.aprx         # Default ArcGIS Project which includes connections to UC Criticality Tool          
     ├── UCPW Criticality Tool.tbx          # ArcGIS Toolbox which contains the UC Criticality Tool
 
